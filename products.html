@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MobileMart | Products</title>
+  <link rel="stylesheet" href="products.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">MobileMart</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cart-link" href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Products</h1>
+    <p>Find your perfect phone with smart filters.</p>
+
+    <div class="toolbar">
+      <input id="searchInput" type="text" placeholder="Search by name or brand" />
+      <div class="filters" id="filterButtons">
+        <button data-brand="All" class="active">All</button>
+        <button data-brand="Apple">Apple</button>
+        <button data-brand="Samsung">Samsung</button>
+        <button data-brand="Xiaomi">Xiaomi</button>
+        <button data-brand="OnePlus">OnePlus</button>
+      </div>
+      <select id="sortSelect">
+        <option value="default">Recommended</option>
+        <option value="price-asc">Price Low to High</option>
+        <option value="price-desc">Price High to Low</option>
+        <option value="rating-desc">Rating</option>
+      </select>
+    </div>
+
+    <div id="productsGrid" class="grid"></div>
+  </main>
+
+  <div id="quickModal" class="modal" aria-hidden="true">
+    <div class="overlay" data-close="1"></div>
+    <div class="modal-card">
+      <button class="close" data-close="1">X</button>
+      <span id="qTag" class="tag"></span>
+      <h3 id="qName"></h3>
+      <p id="qBrand"></p>
+      <p id="qRating"></p>
+      <p id="qPrice" class="price"></p>
+      <button id="qAdd" class="btn btn-primary">Add to Cart</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MobileMart</h3>
+        <p>Your trusted store for the latest smartphones and smart deals.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>Email: support@mobilemart.com</p>
+        <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <p>[FB] [IG] [X] [YT]</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 MobileMart. All rights reserved.</p>
+      <p>Built with HTML, CSS and JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+</body>
+</html>
+
+

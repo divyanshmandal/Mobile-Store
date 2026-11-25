@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MobileMart | Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">MobileMart</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+        <a class="cart-link" href="cart.html">Cart <span id="cartCount"
+            class="badge">0</span></a>
+      </div>
+    </header>
+
+    <main class="container section">
+      <section class="contact-head">
+        <span class="pill">Contact</span>
+        <h1>Let's Talk</h1>
+        <p>Have a question about products, orders, or returns? Our team is here
+          to help.</p>
+      </section>
+
+      <section class="contact-layout">
+        <aside class="info-panel" aria-label="Contact information">
+          <article class="info-card">
+            <h3>Email</h3>
+            <p>support@mobilemart.com</p>
+          </article>
+          <article class="info-card">
+            <h3>Phone</h3>
+            <p>+91 9800000000</p>
+          </article>
+          <article class="info-card">
+            <h3>Working Hours</h3>
+            <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+          </article>
+          <article class="info-card">
+            <h3>Address</h3>
+            <p>Nepal, Kathmandu</p>
+          </article>
+        </aside>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="field-grid">
+            <label>Name <input id="name" type="text" required /></label>
+            <label>Email <input id="email" type="email" required /></label>
+          </div>
+          <div class="field-grid">
+            <label>Phone <input id="phone" type="tel"
+                placeholder="Optional" /></label>
+            <label>Topic
+              <select id="topic">
+                <option value="General">General Query</option>
+                <option value="Order">Order Support</option>
+                <option value="Return">Return Request</option>
+                <option value="Warranty">Warranty Help</option>
+              </select>
+            </label>
+          </div>
+          <label>Message <textarea id="message" rows="6"
+              required></textarea></label>
+          <button type="submit">Send Message</button>
+          <p id="formError" class="error" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>MobileMart</h3>
+          <p>Your trusted store for the latest smartphones and smart deals.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html">Cart</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <p>Email: support@mobilemart.com</p>
+          <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <p>[FB] [IG] [X] [YT]</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 MobileMart. All rights reserved.</p>
+        <p>Built with HTML, CSS and JavaScript</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <script src="contact.js"></script>
+  </body>
+</html>

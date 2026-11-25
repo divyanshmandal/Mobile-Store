@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MobileMart | Cart</title>
+        <link rel="stylesheet" href="cart.css" />
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container nav-inner">
+                <a class="logo" href="index.html">MobileMart</a>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <a class="cart-link active" href="cart.html">Cart <span
+                        id="cartCount" class="badge">0</span></a>
+            </div>
+        </header>
+
+        <main class="container section">
+            <h1>Your Cart</h1>
+            <div id="cartItems" class="items"></div>
+            <div class="summary">
+                <p>Subtotal: <strong id="subtotal">$0</strong></p>
+                <button id="checkoutBtn" type="button">Checkout</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <h3>MobileMart</h3>
+                    <p>Your trusted store for the latest smartphones and smart
+                        deals.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <p>Email: support@mobilemart.com</p>
+                    <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                </div>
+                <div>
+                    <h4>Social</h4>
+                    <p>[FB] [IG] [X] [YT]</p>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <p>&copy; 2026 MobileMart. All rights reserved.</p>
+                <p>Built with HTML, CSS and JavaScript</p>
+            </div>
+        </footer>
+
+        <script src="cart.js"></script>
+    </body>
+</html>
